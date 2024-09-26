@@ -22,7 +22,13 @@
       gesture-detector
       id="scene"
     
-
+  <a-assets>
+    <a-asset-item 
+      id="my-video" 
+      src="cat1.jpg">
+    </a-asset-item> 
+  </a-assets>\
+      
   <a-marker
     type="pattern"
     url="p.patt"
@@ -31,7 +37,8 @@
     cursor="fuse: false; rayOrigin: mouse;"
     id="markerA"
   >
- <a-video src="cat.mp4"></a-video>
+   <a-video src="#my-video" rotation="-90 0 0">
+  </a-video>
   </a-marker>
       
       <a-entity camera></a-entity>
